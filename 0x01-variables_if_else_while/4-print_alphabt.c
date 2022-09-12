@@ -1,21 +1,23 @@
 #include <stdio.h>
 
 /**
-  * main - Prints the numbers since 0 to 9
+  * main - Prints some letters of alphabet
   *
   * Return: Always (Success)
   */
 int main(void)
 {
-	char n;
+	char c;
 
-	for (n = '0'; n <= '9'; n++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(n);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 	}
 
 	putchar('\n');
 
 	return (0);
 }
-
