@@ -1,4 +1,4 @@
-#include "alx.h" 
+#include "stdio.h" 
  /** 		
   * main - Entry point 
   * 
@@ -6,14 +6,9 @@
   */ 
  int main(void) 
  {				 
-         char *sh = "Alx"; 
-  
-         while (*sh) 
-         { 
-                 _putchar(*sh); 
-                 sh++; 
-         } 
-         _putchar('\n'); 
+         int a;		
+      printf("_putchar\n", a);			
+        			
   
          return (0); 				
  }
