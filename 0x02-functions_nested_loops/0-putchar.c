@@ -15,5 +15,5 @@
          } 
          _putchar('\n'); 
   
-         return (0); 
- }i0x02-functions_nested_loops
+         return (0); 				
+ }
