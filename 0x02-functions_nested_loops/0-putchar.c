@@ -5,9 +5,13 @@
   * Return: Always 0 (Success) 
   */ 
  int main(void) 
- {				 
-         int a;		
-      printf("_putchar\n", a);			
+ {							 
+         char a,
+	 while (_putchar ;)
+	 {			
+		 _putchar(a);		
+	 }
+             putchr(\n);		
         			
   
          return (0); 				
