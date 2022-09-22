@@ -6,7 +6,7 @@
  * Return: return (0) is the required function signature
  */
 
-#include "holberton.h"
+#include "main.h"
 char *string_toupper(char *a)
 {
 	int string;
