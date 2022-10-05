@@ -1,2 +1,2 @@
 static_libraries
-i lear what its mean 
+i learn what its mean 
