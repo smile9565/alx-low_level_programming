@@ -1,36 +1,34 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- * *array_range - array of integers
- *
- * @min: integer minimo
- * @max: integer maximo
- *
- * Return: pointer or null
+ * _realloc -  reallocates a memory block using malloc and free
+ * @ptr: pointer
+ * @old_size: old size
+ * @new_size: new size
+ * Return: pointer
  */
-int *array_range(int min, int max)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	int *ptr;
-	int i, size;
+	char *clone, *relloc;
+	unsigned int i;
 
-	if (min > max)
-		return (NULL);
-
-	for (i = min; i <= max; i++)
-		size = size + 1;
-	ptr = malloc(size * sizeof(int));
-	if (ptr == NULL)
-	{
-		return (NULL);
-	}
+	if (ptr != NULL)
+	clone = ptr;
 	else
+	{ return (malloc(new_size)); }
+	if (new_size == old_size)
+	return (ptr);
+	if (new_size == 0 && ptr != NULL)
+	{ free(ptr);
+	return (0); }
+	relloc = malloc(new_size);
+	if (relloc == NULL)
+	return (0);
+	for (i = 0; i < (old_size || i < new_size); i++)
 	{
-		for (i = 0; i <= size; i++)
-		{
-			ptr[i] = min;
-			min++;
-		}
-
-		return (ptr);
+		*(relloc + i) = clone[i];
 	}
+	free(ptr);
+return (relloc);
 }
