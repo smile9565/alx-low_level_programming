@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include "holberton.h"
 
 /**
  * array_range - creates an array of integers
